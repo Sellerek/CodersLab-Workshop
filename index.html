@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Sit on Chair</title>
@@ -9,16 +9,15 @@
 <body>
 <header class="header">
     <div class="centering-container header-wrapper">
-        <h1 class="logo">Sit<span> on </span>chair
-        </h1>
+        <h1 class="logo">Sit<span> on </span>chair</h1>
         <nav class="navigation">
             <ul class="nav-list">
                 <li class="nav-list__item"><a class="nav-list__link" href="#">O firmie</a>
-                <ul class="dropdown">
-                    <li class="dropdown_link">Aktualności</li>
-                    <li class="dropdown_link">Nasz team</li>
-                    <li class="dropdown_link">Historia</li>
-                </ul>
+                    <ul class="dropdown">
+                        <li class="dropdown_link"><a class="dropdown_link__item" href="#">Aktualności</a></li>
+                        <li class="dropdown_link"><a class="dropdown_link__item" href="#">Nasz team</a></li>
+                        <li class="dropdown_link"><a class="dropdown_link__item" href="#">Historia</a></li>
+                    </ul>
                 </li>
                 <li class="nav-list__item"><a class="nav-list__link" href="#">Galeria</a></li>
                 <li class="nav-list__item"><a class="nav-list__link" href="#">Kontakt</a></li>
@@ -26,8 +25,133 @@
         </nav>
     </div>
 </header>
-<section>
-
+<section class="top-section">
+    <div class="centering-container arrow">
+        <h2 class="arrow-left"><a href="#"><</a></h2>
+        <article class="centering-container main-article">
+            <div class="main-image__container">
+                <img class="main-image__image" src="images/black_chair.png" alt="Black Chair">
+            </div>
+            <div class="main-article__item">
+                <h1 class="logo">Sit<span> on </span>our <span>chair</span></h1>
+                <p>
+                    Lorem ipsum dolor sit amet enim. Etiam ultracomper. Suspendisse a pellentesque dul, non felis.
+                    Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a,
+                    ultricies porta urna.
+                </p>
+                <button class="button-item"><a class="button-item__link" href="#">Zobacz więcej</a></button>
+            </div>
+        </article>
+        <h2 class="arrow-right"><a href="#">></a></h2>
+    </div>
 </section>
+<section class="centering-container articles-section">
+    <article class="first-article">
+        <div class="first-article__container">
+            <img class="first-article__image" src="images/box1_img.jpg" alt="Chair Clair">
+        </div>
+        <div class="text-block">
+            <h4>Chair CLAIR</h4>
+        </div>
+    </article>
+    <article class="middle-article">
+        <div class="middle-article__container">
+            <img class="middle-article__image" src="images/box2_img.jpg" alt="Chair Margarita">
+        </div>
+        <div class="text-block">
+            <h4>Chair MARGARITA</h4>
+        </div>
+    </article>
+    <article class="third-article">
+        <h4>Finds all inputs</h4>
+        <p>
+            Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when
+            clicking the checkboxes since no click events have been linked.
+        </p>
+        <p>
+            Notice there is no change when clicking the checkboxes since no click events have been
+        </p>
+    </article>
+</section>
+<div class="prices">
+    <p class="centering-container prices-item">Cennik</p>
+</div>
+<section class="prices-section">
+    <div class="centering-container prices-section_wrapper">
+        <article class="plan basic-plan">
+            <h3>Basic plan</h3>
+            <div class="price">
+                <p>85<span>99</span></p>
+                <p>Pln/msc</p>
+            </div>
+            <ul class="plan_item">
+                <li>Zakup towaru + dowóz</li>
+                <li>Serwis</li>
+            </ul>
+            <button class="plan_button">Dołącz</button>
+        </article>
+        <article class="plan standard-plan">
+            <h3>Standard plan</h3>
+            <div class="price">
+                <p>95<span>99</span></p>
+                <p>Pln/msc</p>
+            </div>
+            <ul class="plan_item">
+                <li>Zakup towaru + dowóz</li>
+                <li>Serwis</li>
+                <li>Gwarancja 5 lat</li>
+            </ul>
+            <button class="plan_button">Dołącz</button>
+        </article>
+        <article class="plan advance-plan">
+            <h3>Advance plan</h3>
+            <div class="price">
+                <p>211<span>99</span></p>
+                <p>Pln/msc</p>
+            </div>
+            <ul class="plan_item">
+                <li>Zakup towaru + dowóz</li>
+                <li>Serwis</li>
+                <li>Gwarancja 6 lat</li>
+                <li>Porady projektanta</li>
+            </ul>
+            <button class="plan_button">Dołącz</button>
+        </article>
+    </div>
+</section>
+<div class="contact">
+    <p class="centering-container contact-item">Kontakt</p>
+</div>
+<section class="centering-container contact-form">
+    <form name="personal-details">
+        <div class="input-wrapper">
+            <input id="name" class="input" type="text" placeholder="Imię">
+        </div>
+        <div class="input-wrapper">
+            <input id="email" class="input" type="email" placeholder="e-mail">
+        </div>
+        <div class="input-wrapper">
+            <textarea id="details" class="textarea" type="text" placeholder="Wiadomość"></textarea>
+        </div>
+    </form>
+    <div class="contact-form_item">
+        <img class="contact-form__image" src="images/red_chair.png" alt="Red Chair">
+        <div class="checkbox-wrapper">
+            <img class="checkbox-wrapper__image" src="images/form_ok.jpg" alt="OK">
+            <p>Zgadzam się na przetwarzanie danych osobowych</p>
+        </div>
+        <button class="contact-form_button">Wyślij</button>
+    </div>
+</section>
+<footer class="centering-container footer-item">
+    <p>Copyright 2014 | All rights reserved. Sit On Chair</p>
+    <div class="social media_items">
+        <img class="social-media__image" src="images/flickr.png" alt="Flickr">
+        <img class="social-media__image" src="images/vimeo.png" alt="Vimeo">
+        <img class="social-media__image" src="images/pinterest.png" alt="Pinterest">
+        <img class="social-media__image" src="images/twitter.png" alt="Twitter">
+    </div>
+    <h1 class="logo">Sit<span> on </span>chair</h1>
+</footer>
 </body>
 </html>
